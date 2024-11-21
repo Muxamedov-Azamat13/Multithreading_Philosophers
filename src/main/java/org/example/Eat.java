@@ -1,7 +1,7 @@
 package org.example;
 
 public class Eat {
-    public void startEating() throws InterruptedException{
+    public void startEating() throws InterruptedException {
         int count = 5;
         Fork[] forks = new Fork[count];
         Philosophers[] philosophers = new Philosophers[count];
@@ -15,7 +15,7 @@ public class Eat {
             philosophers[i].start();
         }
 
-        for (Philosophers philosophers1 : philosophers){
+        for (Philosophers philosophers1 : philosophers) {
             philosophers1.join();
         }
 
